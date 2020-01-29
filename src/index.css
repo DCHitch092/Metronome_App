@@ -13,13 +13,12 @@ code {
 }
 
 .container {
-
-display: flex;
-flex-direction: column;
-background-position: center;
-justify-content: center;
-align-items: center;
-margin: 0 15%;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15%;
 }
 
 .metronome{
@@ -37,29 +36,29 @@ margin: 0 15%;
 
 @keyframes ticking {
 0% {transform: rotate(-45deg);
-  transform-origin: 100% 0%;
+  transform-origin: 130%;
 }
 
 50% {transform:rotate(45deg);
-      transform-origin: 100% 0%;
+      transform-origin: 130%;
     }  
 100% {transform: rotate(-45deg);
-      transform-origin: 100% 0%;
+      transform-origin: 130%;
   }
 }
 
 .ticker {
   min-width: 400px;
-  animation-play-state: running;
+    animation-play-state: running;
 }
 
 input[type=range] {
-  -webkit-appearance: none; /* Override default look */
-  appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: grey; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: grey;
+    cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb{
@@ -100,15 +99,13 @@ input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb{
 
 .value {
 z-index: 100;
-background-color: rgba(203,187,160,1);
-border-radius: 50%;
-height: 100px;
-width: 100px;
-padding: 10px;
-display: flex;
-align-items: center;
-justify-content: center;
-position: absolute;
-top: 65%;
-left: 44.8%;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 200px;
 }

@@ -66,11 +66,12 @@ class MetronomeBox extends Component {
                <div className="container">
                    <main className="metronome"><Controls clickerStatus={this.state.clickerStatus} bpm={this.state.bpm} onTempoChange={this.handleBpmChange}/></main>
                     <Sound  handlePlayStop={this.handlePlayStop}/>
+                    <h1 className="value">{this.state.bpm}</h1>
                     
                </div>
-                <div className="value">
-                    <h1>{this.state.bpm}</h1>
-                </div>
+            
+                   
+                
            </div>
            )
     }
